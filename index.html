@@ -48,7 +48,6 @@
 <div id="chart"></div>
 
 <div class="explain">
-  <h3>这个 Demo 在演示什么（面试讲解用）</h3>
   <p><b>数据层</b>：ECharts 自带 <code>sampling: 'lttb'</code>（Largest Triangle Three Buckets），在保留曲线形状的前提下对密集点抽样；<code>large: true</code> 开启大数据模式。</p>
   <p><b>渲染层</b>：<code>showSymbol: false</code> 不画数据点小圆、<code>animation: false</code> 关动画、<code>progressive</code> 分批上屏。</p>
   <p><b>交互层</b>：<code>dataZoom</code> 让用户拖拽只渲染可视区域；实时数据用 <code>requestAnimationFrame</code> 节流；<code>setOption</code> 用默认增量模式（不整体重绘）。</p>
